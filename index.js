@@ -11,11 +11,15 @@ app.set('views', __dirname + '/views');
 // Rutas
 
 app.get('/', (req, res) => {
-    res.render('Inicio',{desc: "Holi"})
+    res.render('Inicio')
 })
 
 app.get('/info', (req, res) => {
-    res.render('Info', { titulo: "Pagina Informacion" })
+    res.render('Info')
+})
+
+app.get('/port', (req, res) => {
+    res.render('Galeria')
 })
 
 app.use((req, res, next) => {
