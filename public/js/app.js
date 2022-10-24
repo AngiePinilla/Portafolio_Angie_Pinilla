@@ -7,11 +7,11 @@ const progress_bars = document.querySelectorAll(".skills svg circle");
 
 const ml_section = document.querySelector(".milestones");
 const ml_counters = document.querySelectorAll(".number span");
- 
+
 const prt_section = document.querySelector(".portfolio");
 const zoom_icons = document.querySelectorAll(".zoom-icon");
 const modal_overlay = document.querySelector(".modal-overlay");
-const images=document.querySelectorAll(".images img")
+const images = document.querySelectorAll(".images img")
 const next_btn = document.querySelector(".next-btn");
 const prev_btn = document.querySelector(".prev-btn");
 
@@ -51,7 +51,7 @@ let sr = ScrollReveal({
 });
 
 sr.reveal(".showcase-info", { delay: 600 });
-sr.reveal(".showcase-image", { origin:"top" ,delay: 700 });
+sr.reveal(".showcase-image", { origin: "top", delay: 700 });
 
 
 /* --------------- Skills Progress Bar Animation --------------- */
@@ -60,9 +60,9 @@ function hasReached(el) {
     let topPosition = el.getBoundingClientRect().top;
     // console.log(topPosition);
 
-    if (window.innerHeight >= topPosition + el.offsetHeight) return true; 
-        return false;
-    
+    if (window.innerHeight >= topPosition + el.offsetHeight) return true;
+    return false;
+
 }
 
 
@@ -83,11 +83,11 @@ function skillsCounter() {
         let strokeValue = 427 - 427 * (target / 100);
         //console.log(strokeValue);
         progress_bars[i].style.setProperty("--target", strokeValue);
-    
+
         setTimeout(() => {
             updateCount(counter, target);
         }, 400);
-    
+
     });
 
     progress_bars.forEach(
@@ -114,11 +114,11 @@ function mlCounter() {
 /* --------------- Portfolio Filter Animation --------------- */
 
 let mixer = mixitup(".portfolio-gallery", {
-    selectors:{
+    selectors: {
         target: ".prt-card",
     },
     animation: {
-        duration:500,
+        duration: 500,
     },
 });
 
@@ -126,7 +126,7 @@ let mixer = mixitup(".portfolio-gallery", {
 
 let currentIndex = 0;
 
-zoom_icons.forEach((icn,i) =>
+zoom_icons.forEach((icn, i) =>
     icn.addEventListener("click", () => {
         prt_section.classList.add("open");
         document.body.classList.add("stopScrolling");
@@ -168,7 +168,7 @@ function changeImage(index) {
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-    
+
     loop: true,
     speed: 500,
     autoplay: true,
@@ -179,7 +179,7 @@ const swiper = new Swiper('.swiper', {
         clickable: true,
     },
 
-   
+
 });
 
 /* --------------- Change Active Link On Scroll --------------- */

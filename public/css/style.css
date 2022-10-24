@@ -1129,7 +1129,7 @@ footer .container {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-left: 9.5%;
+    /* margin-left: 9%; */
 }
 
 footer .social-media {

@@ -9,15 +9,15 @@
 
     <!-- --------- Scroll Reveal Library --------- -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
+    
     <!-- --------- Swiper Library --------- -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-
+    
     <!-- --------- Unicons Icons --------- -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
+    
     <!-- --------- CSS Files --------- -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -55,16 +55,11 @@
             <div class="container">
                 <div class="skills-box">
                     <div class="box-heading">
-                        <h3 class="sub-heading">My Skills</h3>
-                        <h1 class="heading">Let me help you</h1>
+                        <h3 class="sub-heading">Mi Habilidades</h3>
+                        <h1 class="heading">¿En que te puedo ayudar?</h1>
                         <div class="box-desc">
-                            <p class="text">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Corrupti quasi a eos reprehenderit esse itaque tempore quia
-                                ab iusto! Illum recusandae nulla libero quibusdam amet assumenda
-                                perferendis in illo facilis.
-                            </p>
-                            <a href="#" class="btn">Hire me</a>
+                            <p class="text"><%= infoDesc %></p>
+                            <a href="#" class="btn">Contratame</a>
 
                         </div>
                     </div>
@@ -99,7 +94,7 @@
                                     <circle cx="75" cy="75" r="68" />
                                 </svg>
                                 <h2 class="counter">
-                                    <span data-target="82">0</span>%
+                                    <span data-target="50">0</span>%
                                 </h2>
                             </div>
                             <div class="sk-title">JavaScript</div>
@@ -111,10 +106,10 @@
                                     <circle cx="75" cy="75" r="68" />
                                 </svg>
                                 <h2 class="counter">
-                                    <span data-target="55">0</span>%
+                                    <span data-target="89">0</span>%
                                 </h2>
                             </div>
-                            <div class="sk-ti">IU Design</div>
+                            <div class="sk-ti">Mysql</div>
                         </div>
                     </div>
                     <img src="./img/dots.png" alt="" class="shape dots">
@@ -129,72 +124,56 @@
             <img src="./img/triangle.png" alt="" class="shape triangle">
             <div class="container">
                 <div class="services-info">
-                    <h3 class="sub-heading">My Services</h3>
-                    <h1 class="heading">Things i may do for my clients</h1>
-                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Sed recusandae maxime tempora asperiores amet, beatae unde nesciunt cum
-                        porro adipisci mollitia autem dicta iste voluptates corrupti eveniet
-                        accusamus fugiat voluptatum .
-                    </p>
+                    <h3 class="sub-heading">Mis estudios</h3>
+                    <h1 class="heading">Proyectos y conocimientos</h1>
+                    <p class="text"><%= estInfo %></p>
                     <div class="milestones">
                         <div class="ml">
                             <h2 class="number"><span data-target="11">0</span>+</h2>
-                            <h5>Years</h5>
+                            <h5>Años</h5>
                         </div>
                         <div class="ml">
                             <h2 class="number"><span data-target="79">0</span>+</h2>
-                            <h5>Projects</h5>
+                            <h5>Proyectos</h5>
                         </div>
                         <div class="ml">
                             <h2 class="number"><span data-target="95">0</span>+</h2>
-                            <h5>Clients</h5>
+                            <h5>Practicas</h5>
                         </div>
                     </div>
                     <div class="cta">
-                        <a href="#" class="btn">Hire me</a>
-                        <a href="./img/markusCV.pdf" download class="btn secondary-btn">Downlaod CV</a>
+                        <a href="#" class="btn">Contratame</a>
+                        <a href="./img/markusCV.pdf" download class="btn secondary-btn">Descargar CV</a>
                     </div>
                 </div>
                 <div class="services-grid">
                     <div class="srv-card">
                         <div class="card-desc">
-                            <h3>Brand Identify</h3>
-                            <p class="text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Fuga similique suscipit error accusantium tempora possimus ducimus voluptate
-                            </p>
+                            <h3>Educacion Basica</h3>
+                            <p class="text"><%= Est1 %></p>
                         </div>
-                        <a href="*" class="btn secondary-btn">Explore More</a>
+                        <a href="*" class="btn secondary-btn">Mas informacion</a>
                     </div>
                     <div class="srv-card">
                         <div class="card-desc">
-                            <h3>Product Design</h3>
-                            <p class="text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Fuga similique suscipit error accusantium tempora possimus
-                            </p>
+                            <h3>Tecnico</h3>
+                            <p class="text"><%= Est2 %></p>
                         </div>
-                        <a href="*" class="btn secondary-btn">Explore More</a>
+                        <a href="*" class="btn secondary-btn">Mas informacion</a>
                     </div>
                     <div class="srv-card">
                         <div class="card-desc">
-                            <h3>Integration Design</h3>
-                            <p class="text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Fuga similique suscipit error accusantium tempora possimus ducimus voluptate
-                            </p>
+                            <h3>Tecnologo</h3>
+                            <p class="text"><%= Est3 %></p>
                         </div>
-                        <a href="*" class="btn secondary-btn">Explore More</a>
+                        <a href="*" class="btn secondary-btn">Mas informacion</a>
                     </div>
                     <div class="srv-card">
                         <div class="card-desc">
-                            <h3>App Design</h3>
-                            <p class="text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Fuga similique suscipit error accusantium tempora possimus ducimus voluptate
-                            </p>
+                            <h3>Estudios Extras</h3>
+                            <p class="text"><%= Est4 %></p>
                         </div>
-                        <a href="*" class="btn secondary-btn">Explore More</a>
+                        <a href="*" class="btn secondary-btn">Mas informacion</a>
 
                     </div>
                     <img src="./img/square1.png" alt="" class="shape square">
@@ -209,7 +188,7 @@
         <section class="testimonials section">
             <div class="container">
                 <div class="section-background">
-                    <img src="./img/person2.png" class="person" alt="">
+                    <img src="./img/opc2.svg" class="person" alt="">
                     <img src="./img/circle2.png" class="circle">
                     <img src="./img/square1.png" class="square">
                 </div>
@@ -219,8 +198,8 @@
                             <div class="client">
                                 <img src="./img/testi1.png">
                                 <div class="client-info">
-                                    <h4>Kelly Williams</h4>
-                                    <h5>Executive Officer <a href="#">@ABERenergy</a></h5>
+                                    <h4>Diego Parra</h4>
+                                    <h5>Desarrollador Junior <a href="#">@ABERenergy</a></h5>
                                 </div>
                             </div>
                             <q class="text">
@@ -265,8 +244,8 @@
 
                 </div>
                 <div class="testimonials-title">
-                    <h3 class="sub-heading">Testimonials</h3>
-                    <h1 class="heading">Hear from my happy clients</h1>
+                    <h3 class="sub-heading">Referencias Personales</h3>
+                    <h1 class="heading">Opiniones de compañeros de trabajo</h1>
 
                 </div>
 
@@ -274,30 +253,28 @@
         </section>
 
         <!-- --------- Contact Section --------- -->
-
+        
         <div class="contact section">
             <img src="./img/triangle.png" class="shape triangle">
             <div class="container">
                 <img src="./img/square2.png" class="shape square">
                 <div class="contact-info">
-                    <h3 class="sub-heading">Contact me</h3>
-                    <h1 class="heading">Let's work together</h1>
-                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Sed recusandae maxime tempora asperiores amet, beatae unde nesciunt cum
-                        porro adipisci mollitia autem dicta iste voluptates corrupti eveniet
-                        accusamus fugiat voluptatum .
+                    <h3 class="sub-heading">Contactame</h3>
+                    <h1 class="heading">Trabajemos Juntos</h1>
+                    <p class="text">
+                        <%= descContact %>
                     </p>
                     <a href="mailto:yoangieepinillaa@gmail.com" class="mail">
                         yoangieepinillaa@gmail.com <i class="uil uil-arrow-right"></i>
                     </a>
                 </div>
                 <form action="index.html" class="contact-form">
-                    <h3>Send me a message</h3>
-                    <input type="text" class="form-input" placeholder="Your name" required>
-                    <input type="email" class="form-input" placeholder="Your Email" required>
-                    <textarea name="" id="" cols="30" rows="10" class="form-input" placeholder="Project Details"
+                    <h3>Envia un mensaje</h3>
+                    <input type="text" class="form-input" placeholder="Tu nombre" required>
+                    <input type="email" class="form-input" placeholder="Tu Email" required>
+                    <textarea name="" id="" cols="30" rows="10" class="form-input" placeholder="Detalles del proyecto"
                         required></textarea>
-                    <input type="submit" value="Send" class="btn">
+                    <input type="submit" value="Enviar" class="btn">
                 </form>
             </div>
         </div>
