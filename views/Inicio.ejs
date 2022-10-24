@@ -21,32 +21,7 @@
 </head>
 
 <body>
-
-    <header>
-        <!-- --------- Navbar --------- -->
-        <nav class="container">
-            <a href="#" class="logo">Portaf<span>olio.</span></a>
-            <div class="links">
-                <ul>
-                    <li>
-                        <a href="/" class="nav-link">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="/info" class="nav-link">Habilidades</a>
-                    </li>
-                    <li>
-                        <a href="/port" class="nav-link">Portafolio</a>
-                    </li>
-                    
-                </ul>
-                <i class="uil uil-moon toggle-btn"></i>
-            </div>
-        </nav>
-    </header>
-
-    <!-- <section style="height: 1000px;">
-  <img src="./img/port1.jpg" alt="">
-  </section> -->
+    <%- include('templates/nav'); %>
 
     <main>
         <!-- --------- Showcase Area Section --------- -->
@@ -414,56 +389,13 @@
         
         <!-- --------- Contact Section --------- -->
 
-        <div class="contact section">
-            <img src="./img/triangle.png" class="shape triangle">
-            <div class="container">
-                <img src="./img/square2.png" class="shape square">
-                <div class="contact-info">
-                    <h3 class="sub-heading">Contactame</h3>
-                    <h1 class="heading">Trabajemos Juntos</h1>
-                    <p class="text"><%= descContact %> </p>
-                    <a href="mailto:yoangieepinillaa@gmail.com" class="mail">
-                        yoangieepinillaa@gmail.com <i class="uil uil-arrow-right"></i>
-                    </a>
-                </div>
-                <form action="index.html" class="contact-form">
-                    <h3>Envia un mensaje</h3>
-                    <input type="text" class="form-input" placeholder="Tu nombre" required>
-                    <input type="email" class="form-input" placeholder="Tu Email" required>
-                    <textarea name="" id="" cols="30" rows="10" class="form-input" placeholder="Detalles del proyecto"
-                        required></textarea>
-                    <input type="submit" value="Enviar" class="btn">
-                </form>
-            </div>
-        </div>
+        <%- include('templates/contact'); %>
+
+        
 
     </main>
-    <!-- --------- Footer --------- -->
-    <footer>
-
-        <div class="container">
-            <a href="#" class="logo">Portaf<span>olio.</span></a>
-            <p class="text">&copy; Copyright 2022. All rights reserved</p>
-            <ul class="social-media">
-                <li>
-                    <a href="#" class="social-link">
-                        <i class="uil uil-facebook-f"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="social-link">
-                        <i class="uil uil-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="social-link">
-                        <i class="uil uil-dribbble"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-    </footer>
+    
+    <%- include('templates/footer'); %>
 
     <!-- JavaScript Files -->
 

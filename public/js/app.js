@@ -164,23 +164,6 @@ function changeImage(index) {
     images[index].classList.add("showImage");
 }
 
-/* --------------- Modal Pop Up Animation Animation --------------- */
-
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-
-    loop: true,
-    speed: 500,
-    autoplay: true,
-
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-
-
-});
 
 /* --------------- Change Active Link On Scroll --------------- */
 

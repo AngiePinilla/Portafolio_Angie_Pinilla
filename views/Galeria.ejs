@@ -22,30 +22,7 @@
 
 <body>
 
-    <header>
-        <!-- --------- Navbar --------- -->
-        <nav class="container">
-            <a href="#" class="logo">Portaf<span>olio.</span></a>
-            <div class="links">
-                <ul>
-                    <li>
-                        <a href="/" class="nav-link">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="/info" class="nav-link">Habilidades</a>
-                    </li>
-                    <li>
-                        <a href="/port" class="nav-link">Portafolio</a>
-                    </li>
-                </ul>
-                <i class="uil uil-moon toggle-btn"></i>
-            </div>
-        </nav>
-    </header>
-
-    <!-- <section style="height: 1000px;">
-  <img src="./img/port1.jpg" alt="">
-  </section> -->
+    <%- include('templates/nav'); %>
 
     <main>
         
@@ -202,31 +179,7 @@
 
     </main>
     <!-- --------- Footer --------- -->
-    <footer>
-
-        <div class="container">
-            <a href="#" class="logo">Portaf<span>olio.</span></a>
-            <p class="text">&copy; Copyright 2022. All rights reserved</p>
-            <ul class="social-media">
-                <li>
-                    <a href="#" class="social-link">
-                        <i class="uil uil-facebook-f"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="social-link">
-                        <i class="uil uil-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="social-link">
-                        <i class="uil uil-dribbble"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-    </footer>
+    <%- include('templates/footer'); %>
 
     <!-- JavaScript Files -->
 
